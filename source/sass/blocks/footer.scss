@@ -1,0 +1,96 @@
+.footer {
+  margin: 0 auto;
+  background-color: #011c40;
+
+      @media (max-width: ($vp-1024 - 1px)) {
+    min-height: 120px;
+  }
+
+  &__inner {
+    background-color: $color-tangaroa;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 44px 0px;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      align-items: center;
+      padding: 38px 0 39px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 31px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      align-items: center;
+      gap: 25px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      flex-direction: column;
+      gap: 18px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 34px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    flex-wrap: wrap;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      gap: 23px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      gap: 8px;
+      flex-direction: column;
+    }
+  }
+
+  &__item a {
+    @include text;
+    color: $color-alice-blue;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    @include hover-focus {
+      color: $color-maya-blue;
+    }
+
+    @include active {
+      color: $color-maya-blue-dark;
+    }
+  }
+
+  &__logo {
+    fill:$color-alice-blue;
+    margin-top: 5px;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      margin-top: 10px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      align-self: flex-start;
+      margin-top: 0;
+    }
+  }
+}

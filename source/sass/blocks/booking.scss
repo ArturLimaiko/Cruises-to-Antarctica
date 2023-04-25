@@ -1,0 +1,314 @@
+.booking {
+  background: no-repeat url("../img/bg-form.jpg");
+  background-color: $color-alice-blue;
+  background-position: center;
+  background-size: cover;
+  min-height: 555px;
+  width: 100%;
+
+      @media (max-width: ($vp-1024 - 1px)) {
+    background: no-repeat url("../img/bg-form-tablet.png");
+    background-size: cover;
+    background-position: center;
+    padding: 75px 174px 102px;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    padding: 52px 15px 65px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 48px;
+    max-width: 1160px;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+    }
+  }
+
+  &__box {
+    display: grid;
+    align-self: center;
+    justify-self: flex-end;
+    grid-column: 2/2;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      padding-top: 51px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      padding-top: 35px;
+    }
+  }
+
+  &__description {
+    align-self: center;
+    justify-self: center;
+    margin-left: 33px;
+    margin-top: -20px;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      margin: 0 auto;
+    }
+
+    & h3 {
+      margin: 0;
+      @include title-h3;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px;
+      padding-top: 7px;
+
+          @media (max-width: ($vp-1024 - 1px)) {
+        font-size: 34px;
+        line-height: 51px;
+        padding-top: 11px;
+      }
+
+      @media (max-width: ($vp-768 - 1px)) {
+        font-size: 24px;
+        line-height: 31px;
+        text-align: center;
+        padding-top: 7px;
+      }
+    }
+
+    & p {
+      @include text;
+      max-width: 360px;
+      padding-top: 7px;
+
+          @media (max-width: ($vp-1024 - 1px)) {
+        font-size: 18px;
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 51px;
+      }
+
+      @media (max-width: ($vp-768 - 1px)) {
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 14px;
+        margin: 0 auto;
+        text-align: center;
+        width: 257px;
+        min-width: 54%;
+      }
+    }
+  }
+
+  &__form {
+    margin-right: 60px;
+    margin-bottom: 5px;
+    max-width: 403px;
+    min-height: 455px;
+    background-color: $color-tangaroa;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      margin: 0 auto;
+    }
+
+    & p {
+      @include text;
+      color: $color-alice-blue;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      padding-top: 5px;
+      padding-bottom: 26px;
+
+      @media (max-width: ($vp-1024 - 1px)) {
+        padding-top: 6px;
+      }
+
+      @media (max-width: ($vp-768 - 1px)) {
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        padding-top: 3px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  &__wrapper {
+    padding: 40px 50px 50px;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      padding: 40px 50px 50px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      padding: 30px 30px 41px;
+    }
+  }
+
+  &__name,
+  &__tel,
+  &__email {
+    padding-bottom: 20px;
+  }
+
+  &__email {
+    padding-bottom: 15px;
+  }
+
+  & input {
+    padding: 11px 0 11px 16px;
+    width: 100%;
+    background-color: $color-alice-blue;
+    border: none;
+    color: $color-tangaroa;
+    font-family: $ff-Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__container {
+    padding-top: 32px;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      padding-top: 33px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      padding-top: 26px;
+    }
+  }
+
+  & button {
+    @include button;
+    padding: 11px 30px;
+    width: 100%;
+    display: block;
+    border: none;
+
+    @include hover-focus {
+      color: $color-alice-blue;
+      background-color: $color-maya-blue;
+    }
+
+    @include active {
+      color: $color-alice-blue;
+      background-color: $color-maya-blue-dark;
+    }
+  }
+
+  &__checkbox {
+    position: relative;
+    margin-left: 23px;
+    @include text;
+    font-size: 10px;
+    line-height: 13px;
+    color: $color-alice-blue;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      font-size: 10px;
+      margin-left: 24px;
+    }
+
+    & input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      border: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(100%);
+    }
+
+    & label {
+      margin-left: 23px;
+      margin-top: 8px;
+      display: block;
+      cursor: pointer;
+
+          @media (max-width: ($vp-1024 - 1px)) {
+        margin-left: 0;
+      }
+
+      @media (max-width: ($vp-1024 - 1px)) {
+        margin-top: 7px;
+      }
+
+      @media (max-width: ($vp-768 - 1px)) {
+        margin-left: 4px;
+        margin-top: 1px;
+        margin-right: 47px;
+      }
+    }
+
+    & label::before {
+      position: absolute;
+      content: "";
+      width: 18px;
+      height: 18px;
+      left: 0px;
+      top: -3px;
+      background-color: $color-alice-blue;
+
+          @media (max-width: ($vp-1024 - 1px)) {
+        width: 18px;
+        height: 18px;
+        left: -24px;
+        top: -2px;
+      }
+
+      @media (max-width: ($vp-768 - 1px)) {
+        width: 20px;
+        height: 20px;
+        left: -24px;
+        top: 4px;
+      }
+    }
+
+    & input[type="checkbox"]:checked + label::after {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      background-image: url("../img/svg/checkbox.svg");
+      background-repeat: no-repeat;
+      left: 3px;
+      top: 1px;
+
+          @media (max-width: ($vp-1024 - 1px)) {
+        left: -20px;
+        top: 3px;
+      }
+      @media (max-width: ($vp-768 - 1px)) {
+        top: 10px;
+      }
+    }
+
+    // & input:hover + span::before,
+    // & input:focus + span::before {
+    //   border: 1px solid #e94444;
+    // }
+
+    & input:hover + label,
+    & input:focus + label {
+      color: $color-quartz;
+    }
+  }
+}

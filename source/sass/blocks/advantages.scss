@@ -1,0 +1,137 @@
+.advantages {
+  background: no-repeat url("../img/bg-advantages.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  background-color: $color-alice-blue;
+  width: 100%;
+  min-height: 562px;
+
+  & h2,
+  & h3 {
+    margin: 0;
+  }
+
+  & h2 {
+    text-align: center;
+    padding-top: 112px;
+    @include title-h2;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      font-size: 26px;
+      line-height: 39px;
+      padding-top: 90px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      font-size: 24px;
+      line-height: 36px;
+      padding-top: 58px;
+    }
+  }
+
+  & h3 {
+    @include title-h3;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+
+  & p {
+    margin: 0;
+    padding: 7px 0px 15px;
+    font-family: $ff-Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-tangaroa;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 49px 0 111px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding-bottom: 99px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      display: flex;
+      padding-top: 29px;
+      padding-bottom: 65px;
+    }
+
+    h3 {
+      padding-top: 11px;
+
+          @media (max-width: ($vp-1024 - 1px)) {
+        padding-top: 12px;
+      }
+
+      @media (max-width: ($vp-768 - 1px)) {
+        padding-right: 54px;
+        padding-top: 11px;
+      }
+    }
+  }
+
+  &__card {
+    background-color: $color-alice-blue;
+    max-width: 360px;
+    height: auto;
+    padding: 28px 29px 30px;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      padding: 26px 16px 8px 19px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      max-width: 290px;
+    }
+  }
+
+  &__icon {
+        @media (max-width: ($vp-1024 - 1px)) {
+      &--ship {
+        width: 21px;
+        height: 26px;
+      }
+
+      &--checkmark {
+        width: 27px;
+        height: 26px;
+      }
+
+      &--yacht {
+        width: 36px;
+        height: 26px;
+      }
+    }
+  }
+
+  &__yacht p {
+    padding: 10px 0 15px;
+
+        @media (max-width: ($vp-1024 - 1px)) {
+      padding: 18px 0 12px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      padding: 9px 0 12px;
+    }
+
+
+
+  }
+}

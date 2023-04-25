@@ -1,0 +1,115 @@
+.adress {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 120px 103px 113px;
+  gap: 100px;
+
+  @media (max-width: ($vp-1440 - 1px)) {
+    padding: 100px 45px 92px;
+    gap: 30px;
+  }
+
+  @media (max-width: ($vp-1024 - 1px)) {
+    padding: 100px 45px 92px;
+    gap: 30px;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    flex-direction: column;
+    min-width: 320px;
+    padding: 20px 15px 45px;
+  }
+
+  &__box {
+    padding-top: 75px;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      padding-top: 65px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      padding-top: 38px;
+    }
+
+    & h3 {
+      @include title-h3;
+    }
+
+    & p {
+      position: relative;
+      @include text;
+    }
+  }
+
+  & h3 {
+    @include title-h3;
+    margin: 0;
+    display: block;
+    padding-bottom: 30px;
+  }
+
+  & p {
+    @include text;
+    font-size: 16px;
+    margin: 0;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      font-weight: 400;
+      font-size: 16px;
+      max-width: 254px;
+      margin-top: -3px;
+      margin-left: 5px;
+      line-height: 151%;
+    }
+  }
+
+  &__link,
+  &__contacts {
+    display: flex;
+    gap: 15px;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      gap: 5px;
+    }
+  }
+
+  &__link {
+    padding-bottom: 18px;
+  }
+
+  &__contacts {
+    gap: 10px;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      padding-top: 6px;
+      gap: 2px;
+    }
+  }
+
+  &__image {
+    @media (max-width: ($vp-1024 - 1px)) {
+      width: 324px;
+      height: 335px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      min-width: 290px;
+      width: 290px;
+      height: 335px;
+    }
+  }
+
+  &__icon {
+    @media (max-width: ($vp-1024 - 1px)) {
+      width: 21px;
+      height: 23px;
+
+      &--tel {
+        width: 20px;
+        height: 18px;
+      }
+    }
+  }
+}
