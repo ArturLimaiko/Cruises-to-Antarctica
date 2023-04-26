@@ -1,16 +1,36 @@
 .main-picture {
-  background: no-repeat url("../img/header-bg-desktop.jpg");
+  background-image: -webkit-image-set(
+    url("../img/header-bg-desktop.webp") 1x,
+    url("../img/header-bg-desktop.jpg") 1x,
+    url("../img/header-bg-desktop@2x.webp") 2x,
+    url("../img/header-bg-desktop@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-color: $color-maya-blue;
   background-position: center bottom;
   background-size: cover;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
   @media (max-width: ($vp-1024 - 1px)) {
-    background: no-repeat url("../img/header-bg-tablet.jpg");
+    background-image: -webkit-image-set(
+      url("../img/header-bg-tablet.webp") 1x,
+      url("../img/header-bg-tablet.jpg") 1x,
+      url("../img/header-bg-tablet@2x.webp") 2x,
+      url("../img/header-bg-tablet@2x.jpg") 2x
+    );
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
-    background: no-repeat url("../img/header-bg-mobile.jpg");
+    background-image: -webkit-image-set(
+      url("../img/header-bg-mobile.webp") 1x,
+      url("../img/header-bg-mobile.jpg") 1x,
+      url("../img/header-bg-mobile@2x.webp") 2x,
+      url("../img/header-bg-mobile@2x.jpg") 2x
+    );
+    background-repeat: no-repeat;
     min-height: 500px;
     background-size: cover;
     background-position: center bottom;

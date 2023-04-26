@@ -95,6 +95,14 @@
   }
 
   &__icon {
+    @include hover-focus {
+      fill: $color-maya-blue;
+    }
+
+    @include active {
+      fill: $color-maya-blue-dark;
+    }
+
     @media (max-width: ($vp-1024 - 1px)) {
       width: 38px;
       height: 20px;

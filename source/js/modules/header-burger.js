@@ -1,4 +1,4 @@
-export const headerBurger = () => {
+export const getHeaderBurger = () => {
   const header = document.querySelector('.header');
 
   if (!header) {

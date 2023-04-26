@@ -1,5 +1,11 @@
 .advantages {
-  background: no-repeat url("../img/bg-advantages.jpg");
+  background-image: -webkit-image-set(
+      url("../img/bg-advantages.webp") 1x,
+      url("../img/bg-advantages.jpg") 1x,
+      url("../img/bg-advantages@2x.webp") 2x,
+      url("../img/bg-advantages@2x.jpg") 2x
+    );
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin: 0 auto;
@@ -33,7 +39,7 @@
   & h3 {
     @include title-h3;
 
-        @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1024 - 1px)) {
       font-size: 18px;
       line-height: 25px;
     }
@@ -59,7 +65,7 @@
     gap: 40px;
     flex-wrap: wrap;
 
-        @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1024 - 1px)) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
@@ -75,7 +81,7 @@
     h3 {
       padding-top: 11px;
 
-          @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1024 - 1px)) {
         padding-top: 12px;
       }
 
@@ -92,7 +98,7 @@
     height: auto;
     padding: 28px 29px 30px;
 
-        @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1024 - 1px)) {
       padding: 26px 16px 8px 19px;
     }
 
@@ -102,7 +108,7 @@
   }
 
   &__icon {
-        @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1024 - 1px)) {
       &--ship {
         width: 21px;
         height: 26px;
@@ -123,15 +129,12 @@
   &__yacht p {
     padding: 10px 0 15px;
 
-        @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1024 - 1px)) {
       padding: 18px 0 12px;
     }
 
     @media (max-width: ($vp-768 - 1px)) {
       padding: 9px 0 12px;
     }
-
-
-
   }
 }

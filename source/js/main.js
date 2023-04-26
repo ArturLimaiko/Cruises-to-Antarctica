@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {headerBurger} from './modules/header-burger';
+import {getHeaderBurger} from './modules/header-burger';
 import {scroll} from './modules/scroll';
 const inputsPhone = document.querySelectorAll('[data-phone-number]');
 // ---------------------------------
@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
-  headerBurger();
+  getHeaderBurger();
   scroll();
   iosVhFix();
 
