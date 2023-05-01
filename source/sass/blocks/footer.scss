@@ -10,7 +10,7 @@
     background-color: $color-tangaroa;
     display: grid;
     grid-template-columns: 4fr 1fr;
-    padding: 44px 0px;
+    padding: 44px 0;
 
     @media (max-width: ($vp-1024 - 1px)) {
       align-items: center;

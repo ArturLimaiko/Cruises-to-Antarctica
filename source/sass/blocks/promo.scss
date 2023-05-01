@@ -36,10 +36,11 @@
     }
 
     & h2 {
+      @include title-h2;
+
       display: block;
       margin: 0;
       padding-top: 55px;
-      @include title-h2;
 
       @media (max-width: ($vp-1024 - 1px)) {
         font-size: 26px;

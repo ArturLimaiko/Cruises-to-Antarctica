@@ -39,6 +39,7 @@
 
     & p {
       position: relative;
+
       @include text;
     }
   }
@@ -89,7 +90,7 @@
   }
 
   &__image {
-    border: 0px;
+    border: 0;
 
     @media (max-width: ($vp-1024 - 1px)) {
       width: 324px;

@@ -827,6 +827,7 @@ button,
 
 .advantages {
   background-image: -webkit-image-set(url("../img/bg-advantages.webp") 1x, url("../img/bg-advantages.jpg") 1x, url("../img/bg-advantages@2x.webp") 2x, url("../img/bg-advantages@2x.jpg") 2x);
+  background-image: image-set(url("../img/bg-advantages.webp") 1x, url("../img/bg-advantages.jpg") 1x, url("../img/bg-advantages@2x.webp") 2x, url("../img/bg-advantages@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -865,7 +866,7 @@ button,
 
 .advantages p {
   margin: 0;
-  padding: 7px 0px 15px;
+  padding: 7px 0 15px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -965,6 +966,7 @@ button,
 .cruise__item:hover .cruise__box,
 .cruise__item:focus-visible .cruise__box {
   display: block;
+  overflow: scroll;
 }
 
 .cruise__item:hover .cruise__box h3,
@@ -975,11 +977,6 @@ button,
 .cruise__item:hover .cruise__image,
 .cruise__item:focus-visible .cruise__image {
   display: none;
-}
-
-.cruise__item:hover .cruise__box,
-.cruise__item:focus-visible .cruise__box {
-  overflow: scroll;
 }
 
 .cruise__item:hover .cruise__box::-webkit-scrollbar,
@@ -1077,10 +1074,6 @@ button,
   max-width: 100%;
   padding: 10px 0 9px;
   margin: 0 25px 35px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   display: none;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -1090,6 +1083,9 @@ button,
   grid-row: 3/4;
   -ms-grid-row-align: end;
   align-self: end;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   cursor: pointer;
 }
@@ -1111,6 +1107,7 @@ button,
 
 .booking {
   background-image: -webkit-image-set(url("../img/bg-form.webp") 1x, url("../img/bg-form.png") 1x, url("../img/bg-form.webp") 2x, url("../img/bg-form.png") 2x);
+  background-image: image-set(url("../img/bg-form.webp") 1x, url("../img/bg-form.png") 1x, url("../img/bg-form.webp") 2x, url("../img/bg-form.png") 2x);
   background-repeat: no-repeat;
   background-color: #f9fbfd;
   background-position: center;
@@ -1151,13 +1148,13 @@ button,
 }
 
 .booking__description h3 {
-  margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: #011c40;
+  margin: 0;
   margin: 0;
   font-weight: 700;
   font-size: 40px;
@@ -1265,8 +1262,6 @@ button,
 }
 
 .booking__checkbox {
-  position: relative;
-  margin-left: 23px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1274,6 +1269,8 @@ button,
   line-height: 27px;
   color: #011c40;
   margin: 0;
+  position: relative;
+  margin-left: 23px;
   font-size: 10px;
   line-height: 13px;
   color: #f9fbfd;
@@ -1305,7 +1302,7 @@ button,
   content: "";
   width: 18px;
   height: 18px;
-  left: 0px;
+  left: 0;
   top: -3px;
   background-color: #f9fbfd;
 }
@@ -1407,7 +1404,7 @@ button,
 }
 
 .adress__image {
-  border: 0px;
+  border: 0;
 }
 
 .footer {
@@ -1787,6 +1784,7 @@ button,
 
   .booking {
     background-image: -webkit-image-set(url("../img/bg-form-tablet.webp") 1x, url("../img/bg-form-tablet.png") 1x, url("../img/bg-form-tablet.webp") 2x, url("../img/bg-form-tablet.png") 2x);
+    background-image: image-set(url("../img/bg-form-tablet.webp") 1x, url("../img/bg-form-tablet.png") 1x, url("../img/bg-form-tablet.webp") 2x, url("../img/bg-form-tablet.png") 2x);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2289,7 +2287,6 @@ button,
   }
 
   .booking__description p {
-    margin: 0;
     font-size: 16px;
     line-height: 22px;
     padding-top: 14px;

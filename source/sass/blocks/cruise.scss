@@ -60,6 +60,7 @@
   &:hover .cruise__box,
   &:focus-visible .cruise__box {
     display: block;
+    overflow: scroll;
   }
 
   &:hover .cruise__box h3,
@@ -70,11 +71,6 @@
   &:hover .cruise__image,
   &:focus-visible .cruise__image {
     display: none;
-  }
-
-  &:hover .cruise__box,
-  &:focus-visible .cruise__box {
-    overflow: scroll;
   }
 
   &:hover .cruise__box::-webkit-scrollbar,
@@ -164,7 +160,6 @@
   max-width: 100%;
   padding: 10px 0 9px;
   margin: 0 25px 35px;
-  user-select: none;
   display: none;
   grid-column: 1/2;
   grid-row: 3/4;

@@ -1,10 +1,10 @@
 .booking {
-  background-image: -webkit-image-set(
-      url("../img/bg-form.webp") 1x,
-      url("../img/bg-form.png") 1x,
-      url("../img/bg-form.webp") 2x,
-      url("../img/bg-form.png") 2x
-      );
+  background-image: image-set(
+    url("../img/bg-form.webp") 1x,
+    url("../img/bg-form.png") 1x,
+    url("../img/bg-form.webp") 2x,
+    url("../img/bg-form.png") 2x
+  );
   background-repeat: no-repeat;
   background-color: $color-alice-blue;
   background-position: center;
@@ -12,13 +12,13 @@
   min-height: 555px;
   width: 100%;
 
-      @media (max-width: ($vp-1024 - 1px)) {
-        background-image: -webkit-image-set(
-          url("../img/bg-form-tablet.webp") 1x,
-          url("../img/bg-form-tablet.png") 1x,
-          url("../img/bg-form-tablet.webp") 2x,
-          url("../img/bg-form-tablet.png") 2x
-          );
+  @media (max-width: ($vp-1024 - 1px)) {
+    background-image: image-set(
+      url("../img/bg-form-tablet.webp") 1x,
+      url("../img/bg-form-tablet.png") 1x,
+      url("../img/bg-form-tablet.webp") 2x,
+      url("../img/bg-form-tablet.png") 2x
+    );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -37,7 +37,7 @@
     padding-top: 48px;
     max-width: 1160px;
 
-        @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1024 - 1px)) {
       display: flex;
       flex-direction: column;
     }
@@ -47,9 +47,6 @@
       flex-direction: column;
       padding: 0;
     }
-
-    @media (max-width: ($vp-768 - 1px)) {
-    }
   }
 
   &__box {
@@ -58,7 +55,7 @@
     justify-self: flex-end;
     grid-column: 2/2;
 
-        @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1024 - 1px)) {
       padding-top: 51px;
     }
 
@@ -73,19 +70,20 @@
     margin-left: 33px;
     margin-top: -20px;
 
-        @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1024 - 1px)) {
       margin: 0 auto;
     }
 
     & h3 {
-      margin: 0;
       @include title-h3;
+
+      margin: 0;
       font-weight: 700;
       font-size: 40px;
       line-height: 60px;
       padding-top: 7px;
 
-          @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1024 - 1px)) {
         font-size: 34px;
         line-height: 51px;
         padding-top: 11px;
@@ -104,7 +102,7 @@
       max-width: 360px;
       padding-top: 7px;
 
-          @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1024 - 1px)) {
         font-size: 18px;
         width: 100%;
         margin: 0 auto;
@@ -112,7 +110,6 @@
       }
 
       @media (max-width: ($vp-768 - 1px)) {
-        margin: 0;
         font-size: 16px;
         line-height: 22px;
         padding-top: 14px;
@@ -131,7 +128,7 @@
     min-height: 455px;
     background-color: $color-tangaroa;
 
-        @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1024 - 1px)) {
       margin: 0 auto;
     }
 
@@ -224,14 +221,15 @@
   }
 
   &__checkbox {
+    @include text;
+
     position: relative;
     margin-left: 23px;
-    @include text;
     font-size: 10px;
     line-height: 13px;
     color: $color-alice-blue;
 
-        @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1024 - 1px)) {
       font-size: 10px;
       margin-left: 24px;
     }
@@ -255,7 +253,7 @@
       display: block;
       cursor: pointer;
 
-          @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1024 - 1px)) {
         margin-left: 0;
       }
 
@@ -275,11 +273,11 @@
       content: "";
       width: 18px;
       height: 18px;
-      left: 0px;
+      left: 0;
       top: -3px;
       background-color: $color-alice-blue;
 
-          @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1024 - 1px)) {
         width: 18px;
         height: 18px;
         left: -24px;
@@ -304,10 +302,11 @@
       left: 3px;
       top: 1px;
 
-          @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1024 - 1px)) {
         left: -20px;
         top: 3px;
       }
+
       @media (max-width: ($vp-768 - 1px)) {
         top: 10px;
       }
