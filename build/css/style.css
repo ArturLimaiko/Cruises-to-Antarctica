@@ -388,7 +388,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/montserrat-regular.woff2") format("woff2"), url("../../fonts/montserrat-regular.woff") format("woff");
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -396,7 +396,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url("../../fonts/montserrat-medium.woff2") format("woff2"), url("../../fonts/montserrat-medium.woff") format("woff");
+  src: url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
   font-display: swap;
 }
 
@@ -404,7 +404,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("../../fonts/montserrat-semiBold.woff2") format("woff2"), url("../../fonts/montserrat-semiBold.woff") format("woff");
+  src: url("../fonts/montserrat-semiBold.woff2") format("woff2"), url("../fonts/montserrat-semiBold.woff") format("woff");
   font-display: swap;
 }
 
@@ -412,7 +412,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../../fonts/montserrat-bold.woff2") format("woff2"), url("../../fonts/montserrat-bold.woff") format("woff");
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -732,12 +732,13 @@ button,
 
 .main-picture {
   background-image: -webkit-image-set(url("../img/header-bg-desktop.webp") 1x, url("../img/header-bg-desktop.jpg") 1x, url("../img/header-bg-desktop@2x.webp") 2x, url("../img/header-bg-desktop@2x.jpg") 2x);
+  background-image: image-set(url("../img/header-bg-desktop.webp") 1x, url("../img/header-bg-desktop.jpg") 1x, url("../img/header-bg-desktop@2x.webp") 2x, url("../img/header-bg-desktop@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-color: #5bcfff;
   background-position: center bottom;
   background-size: cover;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .main-box {
@@ -765,14 +766,14 @@ button,
   font-size: 55px;
   color: #f9fbfd;
   padding-bottom: 10px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main-box p {
   color: #f9fbfd;
   font-size: 20px;
   line-height: 24px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .promo {
@@ -795,9 +796,6 @@ button,
 }
 
 .promo__description h2 {
-  display: block;
-  margin: 0;
-  padding-top: 55px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -805,6 +803,9 @@ button,
   line-height: 42px;
   color: #011c40;
   margin: 0;
+  display: block;
+  margin: 0;
+  padding-top: 55px;
 }
 
 .promo__description p {
@@ -1401,6 +1402,7 @@ button,
 
 .adress__contacts {
   gap: 10px;
+  max-width: 170px;
 }
 
 .adress__image {
@@ -1408,6 +1410,7 @@ button,
 }
 
 .footer {
+  width: 100%;
   margin: 0 auto;
   background-color: #011c40;
 }
@@ -1418,7 +1421,7 @@ button,
   display: grid;
   -ms-grid-columns: 4fr 1fr;
   grid-template-columns: 4fr 1fr;
-  padding: 44px 0px;
+  padding: 44px 0;
 }
 
 .footer__nav {
@@ -1629,7 +1632,7 @@ button,
 
   .main-picture {
     background-image: -webkit-image-set(url("../img/header-bg-tablet.webp") 1x, url("../img/header-bg-tablet.jpg") 1x, url("../img/header-bg-tablet@2x.webp") 2x, url("../img/header-bg-tablet@2x.jpg") 2x);
-    background-repeat: no-repeat;
+    background-image: image-set(url("../img/header-bg-tablet.webp") 1x, url("../img/header-bg-tablet.jpg") 1x, url("../img/header-bg-tablet@2x.webp") 2x, url("../img/header-bg-tablet@2x.jpg") 2x);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1639,7 +1642,6 @@ button,
   }
 
   .main-box h1 {
-    text-shadow: none;
     font-size: 51px;
     line-height: 61px;
     text-shadow: none;
@@ -2085,7 +2087,6 @@ button,
     flex-direction: column;
     grid-column: 1/-1;
     overflow: scroll;
-    overflow: scroll;
     height: 100%;
   }
 
@@ -2140,10 +2141,11 @@ button,
 
   .main-picture {
     background-image: -webkit-image-set(url("../img/header-bg-mobile.webp") 1x, url("../img/header-bg-mobile.jpg") 1x, url("../img/header-bg-mobile@2x.webp") 2x, url("../img/header-bg-mobile@2x.jpg") 2x);
+    background-image: image-set(url("../img/header-bg-mobile.webp") 1x, url("../img/header-bg-mobile.jpg") 1x, url("../img/header-bg-mobile@2x.webp") 2x, url("../img/header-bg-mobile@2x.jpg") 2x);
     background-repeat: no-repeat;
     min-height: 500px;
     background-size: cover;
-    background-position: center bottom;
+    background-position: 50% 62%;
   }
 
   .main-box {
@@ -2178,6 +2180,9 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 34px;
   }
 
@@ -2211,7 +2216,7 @@ button,
   }
 
   .advantages__card {
-    max-width: 290px;
+    max-width: 100%;
   }
 
   .advantages__yacht p {
@@ -2344,7 +2349,7 @@ button,
 
   .adress__image {
     min-width: 290px;
-    width: 290px;
+    width: 100%;
     height: 335px;
   }
 
