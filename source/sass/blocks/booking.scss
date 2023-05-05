@@ -22,7 +22,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 75px 174px 102px;
+    padding: 77px 174px 102px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
@@ -156,7 +156,7 @@
   }
 
   &__wrapper {
-    padding: 40px 50px 50px;
+    padding: 41px 50px 50px;
 
     @media (max-width: ($vp-1024 - 1px)) {
       padding: 40px 50px 50px;
@@ -248,8 +248,8 @@
     }
 
     & label {
-      margin-left: 23px;
-      margin-top: 8px;
+      margin-left: 0px;
+      margin-top: 10px;
       display: block;
       cursor: pointer;
 
@@ -273,7 +273,7 @@
       content: "";
       width: 18px;
       height: 18px;
-      left: 0;
+      left: -23px;
       top: -3px;
       background-color: $color-alice-blue;
 
@@ -299,8 +299,8 @@
       height: 12px;
       background-image: url("../img/svg/checkbox.svg");
       background-repeat: no-repeat;
-      left: 3px;
-      top: 1px;
+      left: -20px;
+      top: 2px;
 
       @media (max-width: ($vp-1024 - 1px)) {
         left: -20px;

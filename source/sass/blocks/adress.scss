@@ -1,15 +1,10 @@
 .adress {
   display: flex;
   flex-direction: row-reverse;
-  max-width: 1366px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 120px 103px 113px;
-  gap: 100px;
-
-  @media (max-width: ($vp-1440 - 1px)) {
-    padding: 100px 45px 92px;
-    gap: 30px;
-  }
+  padding: 118px 11px 115px 22px;
+  gap: 78px;
 
   @media (max-width: ($vp-1024 - 1px)) {
     padding: 100px 45px 92px;
@@ -19,11 +14,11 @@
   @media (max-width: ($vp-768 - 1px)) {
     flex-direction: column;
     min-width: 320px;
-    padding: 20px 15px 45px;
+    padding: 22px 15px 45px;
   }
 
   &__box {
-    padding-top: 75px;
+    padding-top: 77px;
 
     @media (max-width: ($vp-1024 - 1px)) {
       padding-top: 65px;
