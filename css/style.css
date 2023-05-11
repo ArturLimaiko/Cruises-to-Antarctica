@@ -1588,6 +1588,16 @@ button,
   }
 */
 
+@media (max-width: 1279px) {
+  .cruises ul {
+    -ms-grid-columns: (260px)[3];
+    grid-template-columns: repeat(3, 260px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 45px;
@@ -2076,6 +2086,10 @@ button,
     width: 100%;
     padding-right: 0;
     padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .header--opened .header__item {
@@ -2217,15 +2231,15 @@ button,
   }
 
   .cruises ul {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 0 10px;
     margin: 0 auto;
   }
 
   .cruises li {
     max-width: none;
-    width: 100%;
+    width: 270px;
     margin: 0 auto;
   }
 
@@ -2236,6 +2250,7 @@ button,
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    padding-bottom: 33px;
   }
 
   .cruises li:hover .cruises__card-wrapper,
@@ -2372,5 +2387,12 @@ button,
     width: 9px;
     height: 16px;
     display: block;
+  }
+}
+
+@media (max-width: 599px) {
+  .cruises ul {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
