@@ -42,6 +42,11 @@
     list-style-type: none;
     margin-left: 15px;
 
+    @media (max-width: ($vp-1280 - 1px)) {
+      grid-template-columns: repeat(3, 260px);
+      justify-content: center;
+    }
+
     @media (max-width: ($vp-1024 - 1px)) {
       grid-template-columns: 1fr 1fr;
       gap: 30px 15px;
@@ -50,9 +55,13 @@
     }
 
     @media (max-width: ($vp-768 - 1px)) {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       padding: 0 10px;
       margin: 0 auto;
+    }
+
+    @media (max-width: ($vp-600 - 1px)) {
+      grid-template-columns: 1fr;
     }
   }
 
@@ -71,7 +80,7 @@
 
     @media (max-width: ($vp-768 - 1px)) {
       max-width: none;
-      width: 100%;
+      width: 270px;
       margin: 0 auto;
     }
 
@@ -88,6 +97,7 @@
         @media (max-width: ($vp-768 - 1px)) {
           display: grid;
           grid-template-columns: 1fr;
+          padding-bottom: 33px;
         }
       }
 
@@ -240,18 +250,6 @@
     }
   }
 }
-
-// .container {
-//   padding: 0 55px;
-
-//   @media (max-width: ($vp-1024 - 1px)) {
-//     padding: 0 60px;
-//   }
-
-//   @media (max-width: ($vp-768 - 1px)) {
-//     padding: 0 25px;
-//   }
-// }
 
 .cruises__card-wrapper {
   height: auto;
